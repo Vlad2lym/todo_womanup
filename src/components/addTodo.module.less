@@ -1,0 +1,62 @@
+.form{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 550px;
+
+    input{
+        width: 100%;
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+        align-self: center;
+    }
+}
+
+.dateAndFiles{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 100%;
+    margin: 5px 0px;
+
+    input{
+        margin: 0px;
+        width: 45%;
+    }
+}
+
+.imgs{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    img{
+        margin: 5px;
+    }
+
+    button{
+        background-color: #e1bda5;
+        align-self: center;
+        border: none;
+        box-shadow: 2px 2px 2px gray;
+    }
+}
+
+.btnAdd{
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+
+    &:hover{
+        box-shadow: 2px 2px 2px gray;
+        background-color: darken(#cbcbbb, 10%);
+    }
+}

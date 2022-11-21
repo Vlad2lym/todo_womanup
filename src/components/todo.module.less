@@ -1,0 +1,68 @@
+.list{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.item{
+    width: 600px;
+    margin: 15px auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+
+    &.missedDeadline{
+        background-color: rgba(#fe0505, .5);
+    }
+
+    &.done{
+        background-color: rgba(#09cd15, .5);
+    }
+}
+
+.headerTodo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todoTitle {
+    margin: 10px 5px;
+  
+    &.done{
+      text-decoration: line-through;
+    }
+}
+
+.title_btns{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn_removeTodo{
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: darken(#e1bda5, 5%);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.btn_fixTodo{
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: darken(#e1bda5, 5%);
+    font-size: 18px;
+    text-align: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.descriptionAndFiles{
+    width: 550px;
+    margin: 0 auto;
+}
